@@ -1,3 +1,3 @@
-(ns hello_world/core.cljs)
+(ns hello-world.core)
 
-(js/console.log "Hello World!")
+(js/console.log "Hello there world!")
