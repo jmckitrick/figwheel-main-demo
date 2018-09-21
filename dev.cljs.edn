@@ -1,4 +1,5 @@
 ;;^{:ring-handler hello-world.server/handler}
 ^{:css-dirs ["resources/public/css"]}
-^{:watch-dirs ["src"]}
+^{:watch-dirs ["src" "tests"]
+  :extra-main-files {:tests {:main hello-world.core-tests}}}
 {:main hello-world.core}
