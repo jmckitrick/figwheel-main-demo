@@ -1,5 +1,8 @@
 ;;^{:ring-handler hello-world.server/handler}
-^{:css-dirs ["resources/public/css"]}
-^{:watch-dirs ["src" "tests"]
-  :extra-main-files {:tests {:main hello-world.core-tests}}}
-{:main hello-world.core}
+^{:css-dirs ["resources/public/css"]
+  :watch-dirs ["src" "tests"]
+  ;;:extra-main-files {:tests {:main hello-world.core-tests}}
+  :auto-testing true}
+
+{:main hello-world.core
+ :closure-defines {cljs-test-display.core/notifications false}}
