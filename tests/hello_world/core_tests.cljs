@@ -12,4 +12,7 @@
 (deftest should-also-pass
   (is (= 2 2)))
 
+(deftest should-also-pass-2
+  (is (= 3 3)))
+
 (run-tests)
